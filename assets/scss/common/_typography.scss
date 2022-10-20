@@ -1,0 +1,27 @@
+@use "../presets" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-family-Roboto;
+  font-size: $font-size-16;
+  font-weight: $font-weight-400;
+  font-style: normal;
+}
+
+.body {
+  color: $color-black;
+  background-color: $color-grey;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+

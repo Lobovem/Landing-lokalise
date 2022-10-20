@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid #D9D9D9;
+}
+.container-header {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.header-logo {
+}
+.header-logo__img {
+}
+.header-menu {
+}
+.header-menu__list {
+  display: flex;
+  list-style: none;
+  gap: 37px;
+}
+.header-menu__item {
+}
+.header-menu__link {
+  display: block;
+  padding: 10px 15px;
+}
+.header-authorization {
+}
+.header-authorization__login {
+}
+.header-authorizationt__free {
+}
