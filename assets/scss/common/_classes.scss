@@ -18,7 +18,21 @@
 }
 
 .container {
-  max-width: 1330px;
+  width: calc(100% - 40px), 1290px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.btn {
+width: 120px;
+min-height: 45px;
+border: none;
+background-color: $color-orange;
+}
+
+.btn--secondary {
+  background-color: $color-white;
+  width: 120px;
+  min-height: 45px;
+  border: 1px solid $color-black;
 }

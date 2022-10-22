@@ -1,16 +1,15 @@
+@use "presets" as *;
 .header {
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid $color-grey-lg;
 }
 .container-header {
-  width: 1440px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex: 1;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 28px;
+  padding-top: 28px;
 }
 .header-logo {
+  margin-right: 35px;
 }
 .header-logo__img {
 }
@@ -19,7 +18,7 @@
 .header-menu__list {
   display: flex;
   list-style: none;
-  gap: 37px;
+  gap: 30px;
 }
 .header-menu__item {
 }
@@ -28,8 +27,11 @@
   padding: 10px 15px;
 }
 .header-authorization {
+  margin-left: auto;
 }
 .header-authorization__login {
+  margin-right: 6px;
+
 }
 .header-authorizationt__free {
 }
