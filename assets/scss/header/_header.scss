@@ -4,7 +4,7 @@
   border-bottom: 1px solid $color-grey-lg;
 }
 
-.container--header {
+.container-header {
   display: flex;
   align-items: center;
   padding-bottom: 22px;
@@ -31,7 +31,7 @@ line-height: 20px;
 }
 }
 
-.header-authorization {
+.header-action {
   margin-left: auto;
 
   &__login {

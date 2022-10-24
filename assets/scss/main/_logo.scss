@@ -1,0 +1,28 @@
+@use "../presets" as *;
+
+.logo {
+  background-color: $color-orange-lg;
+  min-height: 455px;
+  padding: 105px 0;
+
+  &__title {
+    font-weight: $font-weight-600;
+font-size: $font-size-50;
+line-height: 60px;
+max-width: 710px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 70px;
+  }
+
+  &__img-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 102px;
+  }
+
+  &__img {
+  }
+}

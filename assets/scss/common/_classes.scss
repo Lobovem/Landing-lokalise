@@ -32,15 +32,29 @@ font-weight: $font-weight-600;
 line-height: 45px;
 text-align: center;
 color: $color-white;
-}
 
-.btn--secondary {
+&--first {
   background-color: $color-white;
   width: 120px;
   min-height: 45px;
   border: 1px solid $color-grey-sm;
-  font-weight: $font-weight-600;
-line-height: 45px;
 color: $color-black;
-text-align: center;
 }
+
+&--secondary {
+  background-color: $color-white;
+  width: 160px;
+  min-height: 60px;
+  border: 1px solid $color-grey-sm;
+color: $color-black;
+line-height: 60px;
+}
+
+&--third {
+  width: 160px;
+  min-height: 60px;
+line-height: 60px;
+}
+}
+
+
