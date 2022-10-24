@@ -1,0 +1,41 @@
+@use "../presets" as *;
+
+.boost {
+
+  &__title {
+    text-align: center;
+    font-weight: $font-weight-600;
+font-size: $font-size-50;
+line-height: 60px;
+margin-bottom: 90px;
+  }
+
+  &__box {
+    display: flex;
+    gap: $gap-lg;
+  }
+}
+.boost-item {
+
+  &__img {
+    margin-bottom: 46px;
+  }
+
+  &__title {
+    font-weight: $font-weight-600;
+font-size: $font-size-30;
+line-height: 40px;
+margin-top: auto;
+margin-bottom: 34px;
+  }
+
+  &__description {
+font-size: $font-size-20;
+line-height: 30px;
+  }
+
+  &__link {
+font-size: $font-size-20;
+line-height: 30px;
+  }
+}

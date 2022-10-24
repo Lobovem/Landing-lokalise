@@ -1,0 +1,47 @@
+@use "../presets" as *;
+
+.use-lokalise {
+  background-color: $color-brown-lg;
+  padding-top: 120px;
+  margin-bottom: 150px;
+
+  &__title {
+    text-align: center;
+    font-weight: $font-weight-600;
+font-size: $font-size-50;
+line-height: 60px;
+margin-bottom: 80px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 66px;
+    grid-column-gap: 20px;
+    text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  }
+
+  &__item {
+  }
+}
+
+.item-use {
+  // Пересмотреть этот узел
+  max-width: 300px;
+
+  &__title {
+    text-align: center;
+    font-weight: $font-weight-600;
+font-size: $font-size-25;
+line-height: 35px;
+  }
+
+  &__description {
+font-size: $font-size-18;
+line-height: 25px;
+text-align: center;
+  }
+}
