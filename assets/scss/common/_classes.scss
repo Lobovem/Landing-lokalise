@@ -18,9 +18,8 @@
 }
 
 .container {
-  width: calc(100% - 40px), 1290px;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: min(100% - 40px, 1290px);
+  margin-inline: auto;
 }
 
 .btn {
@@ -28,6 +27,7 @@ width: 120px;
 min-height: 45px;
 border: none;
 background-color: $color-orange;
+cursor: pointer;
 }
 
 .btn--secondary {

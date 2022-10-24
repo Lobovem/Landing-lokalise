@@ -2,36 +2,42 @@
 .header {
   border-bottom: 1px solid $color-grey-lg;
 }
-.container-header {
+
+.container--header {
   display: flex;
   align-items: center;
   padding-bottom: 28px;
   padding-top: 28px;
 }
+
 .header-logo {
   margin-right: 35px;
 }
-.header-logo__img {
-}
+
 .header-menu {
+  &__list {
+    display: flex;
+    list-style: none;
+    gap
+    : 30px;
 }
-.header-menu__list {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-.header-menu__item {
-}
-.header-menu__link {
+
+&__link {
   display: block;
   padding: 10px 15px;
 }
+}
+
+.header-menu__item {
+}
+
 .header-authorization {
   margin-left: auto;
-}
-.header-authorization__login {
-  margin-right: 6px;
 
+  &__login {
+    margin-right: 6px;
+  }
 }
-.header-authorizationt__free {
+.header-authorization
+.header-authorization__free {
 }
