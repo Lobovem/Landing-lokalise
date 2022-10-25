@@ -1,0 +1,37 @@
+@use "../presets" as *;
+
+.rating {
+  background-color: $color-brown;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  &__foto {
+    margin-right: 70px;
+  }
+
+  &__title {
+font-weight: $font-weight-600;
+font-size: $font-size-35;
+line-height: 50px;
+width: 460px;
+margin-right: 110px;
+}
+
+  &__logo-wrap {
+    border-left: 1px solid $color-black;
+    min-height: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    margin-left: 70px;
+
+  }
+}
