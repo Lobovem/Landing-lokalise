@@ -1,6 +1,7 @@
 @use "../presets" as *;
 
 .boost {
+  padding-bottom: 190px;
 
   &__title {
     text-align: center;
@@ -12,13 +13,18 @@ margin-bottom: 90px;
 
   &__box {
     display: flex;
-    gap: $gap-lg;
+    gap: 40px;
   }
 }
 .boost-item {
+flex: 1;
 
   &__img {
-    margin-bottom: 46px;
+    min-height: 200px;
+    margin-bottom: 64px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
   }
 
   &__title {
