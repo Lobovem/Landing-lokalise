@@ -1,0 +1,33 @@
+@use "../presets" as *;
+
+.integrate {
+
+  &__container {
+    padding-top: 165px;
+
+display: flex;
+align-items: center;
+flex-direction: column;
+  }
+
+  &__title {
+    font-weight: $font-weight-600;
+font-size: $font-size-65;
+line-height: 75px;
+width: 718px;
+text-align: center;
+  }
+
+  &__desription {
+font-size: $font-size-25;
+line-height: 30px;
+width: 540px;
+text-align: center;
+margin-bottom: 25px;
+  }
+
+  &__foto {
+    margin-bottom: 32px;
+
+  }
+}

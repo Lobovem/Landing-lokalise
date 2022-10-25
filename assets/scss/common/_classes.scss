@@ -29,6 +29,7 @@ border: none;
 background-color: $color-orange;
 cursor: pointer;
 font-weight: $font-weight-600;
+font-size: $font-size-16;
 line-height: 45px;
 text-align: center;
 color: $color-white;
@@ -55,6 +56,14 @@ line-height: 60px;
   min-height: 60px;
 line-height: 60px;
 }
+
+&--fourth {
+  width: 193px;
+  min-height: 60px;
+line-height: 60px;
+}
+
+
 }
 
 .link {
