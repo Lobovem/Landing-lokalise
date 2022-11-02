@@ -1,7 +1,7 @@
-@use "normalize";
+@use "../../libs/normalize.css/normalize";
 @use "presets";
 @use "common";
 @use "header";
 @use "main";
 @use "footer";
-// @use "mixins";
+@use "mixins";

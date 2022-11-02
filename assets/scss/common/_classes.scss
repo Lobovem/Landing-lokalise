@@ -1,4 +1,5 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 .visually-hidden {
   position: absolute;
 
@@ -25,21 +26,46 @@
 .btn {
 width: 120px;
 min-height: 45px;
-border: none;
-background-color: $color-orange;
+border-width: 1px;
+border-style: solid;
 cursor: pointer;
 font-weight: $font-weight-600;
-font-size: $font-size-16;
-line-height: 45px;
 text-align: center;
 color: $color-white;
 
-&--first {
+&--accent {
+  background-color: $color-orange;
+  border-color: $color-orange;
+}
+
+&--primary {
   background-color: $color-white;
   width: 120px;
   min-height: 45px;
   border: 1px solid $color-grey-sm;
 color: $color-black;
+}
+
+&--sm {
+  @include md-min {
+    width: 120px;
+    min-height: 45px;
+  }
+
+    @include md {
+      width: 100px;
+      min-height: 35px;
+    }
+  }
+
+&--md {
+  width: 160px;
+  min-height: 60px;
+}
+
+&--lg {
+width: 193px;
+min-height: 60px;
 }
 
 &--secondary {

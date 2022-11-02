@@ -1,40 +1,46 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
 .header {
   border-bottom: 1px solid $color-grey-lg;
-}
 
-.container-header {
-  display: flex;
-  align-items: center;
-  padding-bottom: 22px;
-  padding-top: 22px;
-}
-
-.header-logo {
-  margin-right: 35px;
-}
-
-.header-menu {
-  
-  &__list {
+  &__container {
     display: flex;
-    gap: 30px;
-    @include unlist;
-}
+    align-items: center;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    gap: 25px 35px;
+    
+    @include xs {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 
-&__link {
-  display: block;
-  padding: 15px;
-  font-size: $font-size-15;
-line-height: 20px;
-}
-}
+  &__logo {
+    
+    @include xs {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  &__action {
+    display: flex;
+    gap: $gap-sm;
 
-.header-action {
-  margin-left: auto;
+    @include xs-min {
+      margin-left: auto;
+    }
 
-  &__login {
-    margin-right: 6px;
+    @include xs {
+    margin-right: auto;
+    }
+
+    @include ux {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
   }
 }
