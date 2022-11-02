@@ -1,44 +1,99 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
-.container-banner {
-  display: flex;
-  padding-top: 80px;
-  padding-bottom: 172px;
-}
+.banner {
+  &__container {
+    display: grid;
+    align-items: center;
 
-.banner-info {
-  display: flex;
-  flex-direction: column;
+    padding-top: 125px;
+    padding-bottom: 172px;
 
-		&__title {
-font-weight: $font-weight-600;
-font-size: $font-size-65;
-line-height: 70px;
-margin-bottom: 52px;
+    gap: $gap-sm;
+    @include xl-min {
+      grid-template-areas: "tl im" "ds im" "ac im" "ft im";
+      grid-template-columns: 1fr 1fr;
+    }
+    @include xl {
+			text-align: center;
+      padding-top: 75px;
+      padding-bottom: 75px;
+      grid-template-areas: "tl" "ds" "im" "ac" "ft";
+    }
+    @include sm {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    font-size: $font-size-65;
+    font-weight: $font-weight-600;
+    line-height: 70px;
+
+    grid-area: tl;
+    @include xl {
+      font-size: $font-size-50;
+      line-height: 50px;
+    }
+    @include sm {
+      margin-bottom: 20px;
+
+      font-size: $font-size-40;
+    }
+    @include xx {
+      font-size: $font-size-30;
+      line-height: 40px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 40px;
+
+    font-size: $font-size-25;
+    line-height: 35px;
+
+    grid-area: ds;
+    @include xl-min {
+      max-width: 470px;
+    }
+    @include sm {
+      font-size: $font-size-20;
+      line-height: 25px;
+    }
+  }
+
+  &__action {
+    display: flex;
+justify-content: center;
+    margin-bottom: 15px;
+
+    gap: $gap-sm;
+    grid-area: ac;
+  }
+
+  &__footer-text {
+    font-size: $font-size-15;
+    line-height: 25px;
+
+    grid-area: ft;
+  }
+
+  &__img {
+    grid-area: im;
+  }
+	
+  &__picture {
+		@include xl {
+			width: 100%;
+			margin-bottom: 30px;
+    }
+
+		@include xl-xx {
+			width: 75%;
 		}
-
-		&__description {
-font-size: $font-size-25;
-line-height: 35px;
-margin-bottom: 50px;
-max-width: 470px;
-		}
-
-		&__action {
-      margin-bottom: 26px;
-		}
-
-		&__button-1 {
-margin-right: 6px;
-		}
-
-		&__footer-text {
-font-size: $font-size-15;
-line-height: 25px;
-		}
-}
-
-.banner-img {
-  padding-top: 70px;
-
+  }
 }

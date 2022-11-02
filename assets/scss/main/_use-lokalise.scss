@@ -1,30 +1,33 @@
 @use "../presets" as *;
 
 .use-lokalise {
-  background-color: $color-brown-lg;
-  padding-top: 120px;
   margin-bottom: 150px;
+  padding-top: 120px;
+
+  background-color: $color-brown-lg;
 
   &__title {
+    margin-bottom: 80px;
+
     text-align: center;
+
+    font-size: $font-size-50;
     font-weight: $font-weight-600;
-font-size: $font-size-50;
-line-height: 60px;
-margin-bottom: 80px;
+    line-height: 60px;
   }
 
   &__box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 66px;
-    grid-column-gap: 20px;
-    text-align: center;
-  justify-content: space-around;
-  justify-items: center;
-  padding-bottom: 150px;
-  }
+    justify-content: space-around;
 
-  &__item {
+    padding-bottom: 150px;
+
+    text-align: center;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 66px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 }
 
@@ -33,20 +36,22 @@ margin-bottom: 80px;
   max-width: 300px;
 
   &__foto {
-margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   &__title {
     text-align: center;
+
+    font-size: $font-size-25;
     font-weight: $font-weight-600;
-font-size: $font-size-25;
-line-height: 35px;
+    line-height: 35px;
   }
 
   &__description {
-font-size: $font-size-18;
-line-height: 25px;
-text-align: center;
+    text-align: center;
+
+    font-size: $font-size-18;
+    line-height: 25px;
   }
 }
 

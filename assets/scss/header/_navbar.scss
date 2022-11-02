@@ -8,22 +8,27 @@
 
   &__list {
     display: flex;
-    gap: 30px;
 
     @include unlist;
-
+    @include xl-min {
+      gap: 30px;
+    }
+    @include xl {
+      gap: 20px;
+    }
     @include lg {
       display: none;
     }
-
     @include xs {
       flex-direction: column;
     }
-    }
-  
+  }
+
   &__link {
     display: block;
+
     padding: 15px;
+
     font-size: $font-size-15;
     line-height: 20px;
   }
@@ -31,11 +36,12 @@
 
 .header-navbar__btn {
   position: relative;
+
   width: 40px;
   height: 30px;
-  
+
   cursor: pointer;
-  
+
   @include lg-min {
     display: none;
   }

@@ -7,10 +7,11 @@
   &__container {
     display: flex;
     align-items: center;
-    padding-bottom: 22px;
+
     padding-top: 22px;
+    padding-bottom: 22px;
+
     gap: 25px 35px;
-    
     @include xs {
       flex-wrap: wrap;
       justify-content: center;
@@ -18,28 +19,27 @@
   }
 
   &__logo {
-    
     @include xs {
       width: 100%;
+
       text-align: center;
     }
   }
-  
+
   &__action {
     display: flex;
-    gap: $gap-sm;
 
+    gap: $gap-sm;
     @include xs-min {
       margin-left: auto;
     }
-
     @include xs {
-    margin-right: auto;
+      margin-right: auto;
     }
-
     @include ux {
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
+
       margin-left: auto;
     }
   }

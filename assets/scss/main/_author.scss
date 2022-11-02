@@ -5,30 +5,29 @@
 
   &__container {
     display: flex;
+
     padding-top: 63px;
     padding-bottom: 104px;
-    gap: 100px;
 
+    gap: 100px;
   }
 
-&__text-wrap {
-}
+
   &__text {
+    margin-bottom: 30px;
+
     font-size: $font-size-30;
-line-height: 40px;
-margin-bottom: 30px;
+    line-height: 40px;
   }
 
   &__description {
     margin-bottom: 6px;
   }
 
-  &__img {
-  }
+
 
   &__foto {
     display: block;
   }
-
 }
 

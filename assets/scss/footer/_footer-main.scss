@@ -3,77 +3,73 @@
 .footer {
   background-color: $color-grey;
 }
-.container {
-}
+
 .footer-main {
   display: flex;
+
   padding-top: 95px;
   padding-bottom: 95px;
-  gap: 62px;
+
   border-bottom: 1px solid $color-black;
 
-  
-		&__studies {
-     
-		}
-
-		&__menu {
-		}
+  gap: 62px;
 }
 .studies {
   display: flex;
   flex-direction: column;
+
   max-width: 300px;
   margin-right: 78px;
 
-		&__title {
-      font-weight: $font-weight-600;
-font-size: $font-size-40;
-line-height: 50px;
-margin-bottom: 28px;
-		}
+  &__title {
+    margin-bottom: 28px;
 
-		&__foto {
-      margin-bottom: 31px;
-      max-width: 300px;
-      max-height: 300px;
-		}
+    font-size: $font-size-40;
+    font-weight: $font-weight-600;
+    line-height: 50px;
+  }
 
-		&__logo {
-      width: 80px;
-      height: 32px;
-      margin-bottom: 11px;
-		}
+  &__foto {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 31px;
+  }
 
-		&__desription {
-font-size: $font-size-20;
-line-height: 30px;
-margin-bottom: 15px;
-		}
+  &__logo {
+    width: 80px;
+    height: 32px;
+    margin-bottom: 11px;
+  }
 
-		&__link {
-      font-weight: $font-weight-600;
-font-size: $font-size-20;
-line-height: 30px;
-		}
+  &__desription {
+    margin-bottom: 15px;
+
+    font-size: $font-size-20;
+    line-height: 30px;
+  }
+
+  &__link {
+    font-size: $font-size-20;
+    font-weight: $font-weight-600;
+    line-height: 30px;
+  }
 }
 
 .footer-menu {
+  &__title {
+    margin-bottom: 21px;
+  }
 
-		&__title {
-      margin-bottom: 21px;
-		}
+  &__list {
+    list-style: none;
+  }
 
-		&__list {
-      list-style: none;
-		}
+  &__item {
+    margin-bottom: 15px;
+  }
 
-		&__item {
-      margin-bottom: 15px;
-		}
-
-		&__link {
-font-size: $font-size-15;
-line-height: 15px;
-		}
+  &__link {
+    font-size: $font-size-15;
+    line-height: 15px;
+  }
 }

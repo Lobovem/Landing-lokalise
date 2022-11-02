@@ -1,33 +1,36 @@
 @use "../presets" as *;
 
 .integrate {
-
   &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     padding-top: 165px;
-padding-bottom: 162px;
-display: flex;
-align-items: center;
-flex-direction: column;
+    padding-bottom: 162px;
   }
 
   &__title {
+    width: 718px;
+
+    text-align: center;
+
+    font-size: $font-size-65;
     font-weight: $font-weight-600;
-font-size: $font-size-65;
-line-height: 75px;
-width: 718px;
-text-align: center;
+    line-height: 75px;
   }
 
   &__desription {
-font-size: $font-size-25;
-line-height: 30px;
-width: 540px;
-text-align: center;
-margin-bottom: 25px;
+    width: 540px;
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    font-size: $font-size-25;
+    line-height: 30px;
   }
 
   &__foto {
     margin-bottom: 32px;
-
   }
 }

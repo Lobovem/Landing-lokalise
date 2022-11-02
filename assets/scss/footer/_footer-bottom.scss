@@ -1,25 +1,24 @@
 @use "../presets" as *;
 
 .footer-bottom {
-  padding-top: 52px;
-  padding-bottom: 43px;
   display: flex;
   justify-content: space-between;
 
-  &__text {
-  }
+  padding-top: 52px;
+  padding-bottom: 43px;
 }
 .footer-logo {
   display: flex;
+
   gap: 15px;
 
-  &__img {
-  }
+
 
   &__text {
     max-width: 301px;
-font-size: $font-size-12;
-line-height: 15px;
+
+    font-size: $font-size-12;
+    line-height: 15px;
   }
 }
 
@@ -28,7 +27,7 @@ line-height: 15px;
 
   &__text {
     font-size: $font-size-12;
-line-height: 15px;
+    line-height: 15px;
   }
 }
 

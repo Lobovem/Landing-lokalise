@@ -6,6 +6,7 @@
   &__container {
     display: flex;
     align-items: center;
+
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -15,23 +16,25 @@
   }
 
   &__title {
-font-weight: $font-weight-600;
-font-size: $font-size-35;
-line-height: 50px;
-width: 460px;
-margin-right: 110px;
-}
+    width: 460px;
+    margin-right: 110px;
+
+    font-size: $font-size-35;
+    font-weight: $font-weight-600;
+    line-height: 50px;
+  }
 
   &__logo-wrap {
-    border-left: 1px solid $color-black;
-    min-height: 168px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    min-height: 168px;
+
+    border-left: 1px solid $color-black;
   }
 
   &__logo {
     margin-left: 70px;
-
   }
 }
