@@ -1,28 +1,63 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .logo {
-  min-height: 455px;
   padding: 105px 0;
-
   background-color: $color-orange-lg;
+
+  @include  xl {
+    padding: 50px 0;
+  }
 
   &__title {
     max-width: 710px;
     margin-right: auto;
     margin-bottom: 70px;
     margin-left: auto;
+    text-align: center;
 
     font-size: $font-size-50;
     font-weight: $font-weight-600;
     line-height: 60px;
+
+    @include xl-xs {
+      font-size: $font-size-40;
+    line-height: 50px;
+    margin-bottom: 40px;
+
+    }
+
+    @include  xs {
+      font-size: $font-size-30;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+    }
   }
 
-  &__img-box {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  &__list {
+    display: grid;
+      align-items: center;
+      gap: $gap-lg;
+      
+      @include  xl-min {
+        grid-template-columns: repeat(6, minmax(50px, max-content));
+        justify-content: space-between;
+  }
 
-    gap: 102px;
+    @include ul-xs {
+      grid-template-columns: repeat(3, minmax(50px, max-content));
+      justify-content: space-evenly;
+    }
+
+    @include xs-ux {
+      grid-template-columns: repeat(2, minmax(50px, max-content));
+      justify-content: space-evenly;
+    }
+
+    @include ux {
+      justify-content: center;
+
+    }
   }
 }

@@ -68,11 +68,14 @@
 
   &__action {
     display: flex;
-justify-content: center;
     margin-bottom: 15px;
 
     gap: $gap-sm;
     grid-area: ac;
+
+    @include xl {
+justify-content: center;
+    }
   }
 
   &__footer-text {
