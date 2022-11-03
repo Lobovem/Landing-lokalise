@@ -1,16 +1,19 @@
 @use "../presets" as *;
 
-.benefits-container {
+.benefits {
+  padding-top: 90px;
+
+  &__container{
+  padding-bottom: 240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 180px;
+  }
 
-  gap: 138px;
-}
+		&__text-box {
+		}
 
-.benefits {
-  padding-top: 90px;
-  padding-bottom: 150px;
 
   &__title {
     margin-bottom: 30px;
@@ -34,4 +37,13 @@
     font-weight: $font-weight-600;
     line-height: 30px;
   }
+
+		&__img-box {
+      min-width: 632px;
+		}
+
+		&__img {
+      width: 100%;
+		}
 }
+
