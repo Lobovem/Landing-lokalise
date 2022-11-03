@@ -15,9 +15,11 @@
       grid-template-columns: 1fr 1fr;
     }
     @include xl {
-			text-align: center;
       padding-top: 75px;
       padding-bottom: 75px;
+
+      text-align: center;
+
       grid-template-areas: "tl" "ds" "im" "ac" "ft";
     }
     @include sm {
@@ -68,13 +70,13 @@
 
   &__action {
     display: flex;
+
     margin-bottom: 15px;
 
     gap: $gap-sm;
     grid-area: ac;
-
     @include xl {
-justify-content: center;
+      justify-content: center;
     }
   }
 
@@ -88,15 +90,14 @@ justify-content: center;
   &__img {
     grid-area: im;
   }
-	
-  &__picture {
-		@include xl {
-			width: 100%;
-			margin-bottom: 30px;
-    }
 
-		@include xl-xx {
-			width: 75%;
-		}
+  &__picture {
+    @include xl {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    @include xl-xx {
+      width: 75%;
+    }
   }
 }

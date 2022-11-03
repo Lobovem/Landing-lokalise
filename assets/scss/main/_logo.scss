@@ -3,6 +3,7 @@
 
 .logo {
   padding: 105px 0;
+
   background-color: $color-orange-lg;
 
   @include  xl {
@@ -14,6 +15,7 @@
     margin-right: auto;
     margin-bottom: 70px;
     margin-left: auto;
+
     text-align: center;
 
     font-size: $font-size-50;
@@ -21,43 +23,41 @@
     line-height: 60px;
 
     @include xl-xs {
+      margin-bottom: 40px;
+
       font-size: $font-size-40;
-    line-height: 50px;
-    margin-bottom: 40px;
-
+      line-height: 50px;
     }
-
     @include  xs {
-      font-size: $font-size-30;
-    line-height: 40px;
-    margin-bottom: 30px;
+      margin-bottom: 30px;
 
+      font-size: $font-size-30;
+      line-height: 40px;
     }
   }
 
   &__list {
     display: grid;
-      align-items: center;
-      gap: $gap-lg;
-      
-      @include  xl-min {
-        grid-template-columns: repeat(6, minmax(50px, max-content));
-        justify-content: space-between;
-  }
+    align-items: center;
 
+    gap: $gap-lg;
+    @include  xl-min {
+      justify-content: space-between;
+
+      grid-template-columns: repeat(6, minmax(50px, max-content));
+    }
     @include ul-xs {
+      justify-content: space-evenly;
+
       grid-template-columns: repeat(3, minmax(50px, max-content));
-      justify-content: space-evenly;
     }
-
     @include xs-ux {
-      grid-template-columns: repeat(2, minmax(50px, max-content));
       justify-content: space-evenly;
-    }
 
+      grid-template-columns: repeat(2, minmax(50px, max-content));
+    }
     @include ux {
       justify-content: center;
-
     }
   }
 }
