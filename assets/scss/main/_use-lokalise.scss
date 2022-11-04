@@ -1,8 +1,14 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .use-lokalise {
   margin-bottom: 150px;
   padding-top: 120px;
+
+  @include xl {
+    padding-top: 50px;
+    margin-bottom: 75px;
+  }
 
   background-color: $color-brown-lg;
 
@@ -14,29 +20,62 @@
     font-size: $font-size-50;
     font-weight: $font-weight-600;
     line-height: 60px;
+
+    @include  lg {
+      font-size: $font-size-40;
+      line-height: 50px;
+margin-bottom: 50px;
+    }
+
+    @include sm {
+      line-height: 40px;
+      font-size: $font-size-30;
+
+    }
+
+   
   }
 
   &__box {
     display: grid;
-    justify-content: space-around;
-
     padding-bottom: 150px;
-
     text-align: center;
-
     grid-column-gap: 20px;
     grid-row-gap: 75px;
-    grid-template-columns: repeat(3, minmax(50px, max-content));
-    justify-items: center;
+
+    @include lg-min {
+      grid-template-columns: repeat(3, minmax(50px, 300px));
+      justify-content: space-around;
+
+    }
+
+    @include  lg-sm {
+    grid-template-columns: repeat(2, minmax(50px, max-content));
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+      
+    }
+
+    @include  sm {
+      padding-bottom: 50px;
+
+    }
   }
 }
 
 .item-use {
-  // Пересмотреть этот узел
-  max-width: 300px;
 
   &__foto {
-    margin-bottom: 18px;
+    
+    @include  sm-min {
+      margin-bottom: 18px;
+
+    }
+
+    @include sm {
+      margin-bottom: 5px;
+
+    }
   }
 
   &____img {
@@ -50,6 +89,7 @@
     font-weight: $font-weight-600;
     line-height: 35px;
     margin-bottom: 20px;
+    
   }
 
   &__description {
