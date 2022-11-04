@@ -87,11 +87,11 @@
     grid-area: ft;
   }
 
-  &__img {
+  &__picture {
     grid-area: im;
   }
 
-  &__picture {
+  &__img {
     @include xl {
       width: 100%;
       margin-bottom: 30px;

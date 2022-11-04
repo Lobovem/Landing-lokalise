@@ -7,7 +7,7 @@
 
   @include xl {
     padding-top: 50px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 
   background-color: $color-brown-lg;
@@ -21,7 +21,7 @@
     font-weight: $font-weight-600;
     line-height: 60px;
 
-    @include  lg {
+    @include  xl {
       font-size: $font-size-40;
       line-height: 50px;
 margin-bottom: 50px;
@@ -65,7 +65,7 @@ margin-bottom: 50px;
 
 .item-use {
 
-  &__foto {
+  &__picture {
     
     @include  sm-min {
       margin-bottom: 18px;
