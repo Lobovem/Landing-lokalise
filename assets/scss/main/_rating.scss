@@ -15,6 +15,10 @@
     margin-right: 70px;
   }
 
+  &__img {
+
+  }
+  
   &__title {
     width: 460px;
     margin-right: 110px;
@@ -23,6 +27,7 @@
     font-weight: $font-weight-600;
     line-height: 50px;
   }
+
 
   &__logo-wrap {
     display: flex;
