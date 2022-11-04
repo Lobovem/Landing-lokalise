@@ -1,15 +1,37 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .author {
   background-color: $color-blue;
 
   &__container {
     display: flex;
-
     padding-top: 63px;
     padding-bottom: 104px;
+justify-content: space-between;
 
-    gap: 100px;
+@include  xl-min {
+      gap: $gap 142px;
+    }
+
+    @include  xl {
+      gap: $gap $gap;
+    }
+
+    @include  sm {
+      flex-wrap: wrap;
+      justify-content: center;
+    padding-bottom: 50px;
+
+    }
+
+  }
+
+  &__text-wrap {
+    @include sm {
+      text-align: center;
+    }
+
   }
 
 
@@ -18,6 +40,13 @@
 
     font-size: $font-size-30;
     line-height: 40px;
+
+    @include  md {
+    font-size: $font-size-25;
+    line-height: 30px;
+
+
+    }
   }
 
   &__description {
@@ -26,8 +55,28 @@
 
 
 
-  &__foto {
-    display: block;
+  
+  &__picture {
+    @include  sm {
+order: -1;
+    }
   }
+
+  &__foto {
+    
+    @include  md-min {
+      max-width: 310px;
+
+    }
+
+    @include  md {
+      max-width: 250px;
+    }
+
+    @include  sm {
+      max-width: 100%;
+    }
+  }
+
 }
 
