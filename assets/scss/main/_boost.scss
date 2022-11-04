@@ -36,7 +36,7 @@
     gap: $gap-xl $gap;
 
     @include lg-min {
-      grid-template-columns: repeat(3, minmax(50px, 378px));
+      grid-template-columns: repeat(3, minmax(50px, 410px));
       justify-content: space-between;
     }
 
@@ -46,6 +46,13 @@
   }
 }
 .boost-item {
+
+  @include  sm {
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+
+  }
 
   &__picture {
     display: flex;

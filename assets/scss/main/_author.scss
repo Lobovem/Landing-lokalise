@@ -6,12 +6,12 @@
 
   &__container {
     display: flex;
-    padding-top: 63px;
+    padding-top: 53px;
     padding-bottom: 104px;
 justify-content: space-between;
 
 @include  xl-min {
-      gap: $gap 142px;
+      gap: $gap 96px;
     }
 
     @include  xl {
@@ -37,6 +37,7 @@ justify-content: space-between;
 
   &__text {
     margin-bottom: 30px;
+    margin-top: 10px;
 
     font-size: $font-size-30;
     line-height: 40px;
@@ -50,7 +51,7 @@ justify-content: space-between;
   }
 
   &__description {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
 
