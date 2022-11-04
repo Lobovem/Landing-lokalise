@@ -1,4 +1,5 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .rating {
   background-color: $color-brown;
@@ -6,13 +7,31 @@
   &__container {
     display: flex;
     align-items: center;
+flex-wrap: wrap;
+    padding-top: 85px;
+    padding-bottom: 85px;
 
-    padding-top: 90px;
-    padding-bottom: 90px;
+    @include  ul {
+      justify-content: center;
+    }
+
+    @include  xl {
+      gap: 30px 0;
+      padding-top: 50px;
+    padding-bottom: 50px;
+    }
   }
 
-  &__foto {
-    margin-right: 70px;
+  &__picture {
+    @include  ul-min {
+      margin-right: 66px;
+    }
+
+    @include  ul {
+      margin-right: 30px;
+      
+
+    }
   }
 
   &__img {
@@ -20,26 +39,67 @@
   }
   
   &__title {
-    width: 460px;
-    margin-right: 110px;
+
+
+    max-width: 461px;
 
     font-size: $font-size-35;
     font-weight: $font-weight-600;
     line-height: 50px;
+
+    
+    @include  ul-min {
+      margin-right: 124px;
+      
+    }
+    @include  ul-lg {
+    margin-right: 20px;
+
+    }
+
+    @include  lg {
+    text-align: center;   
+
+    }
+
+    @include  sm {
+    font-size: $font-size-30;
+    line-height: 40px;
+
+
+    }
+
+  
   }
 
 
   &__logo-wrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    @include  lg-min {
+      min-height: 168px;
+    }
+    
+    @include sm-min{
+      border-left: 1px solid $color-black;
 
-    min-height: 168px;
+    }
 
-    border-left: 1px solid $color-black;
+    @include  lg {
+      justify-content: space-evenly;
+      gap: $gap-lg;
+    }
+
+
   }
-
+  
   &__logo {
-    margin-left: 70px;
+
+    @include  sm-min {
+      margin-left: 70px;
+    }
+    
+    
   }
 }
