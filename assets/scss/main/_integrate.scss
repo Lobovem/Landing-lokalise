@@ -1,27 +1,58 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .integrate {
+
   &__container {
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    padding-top: 165px;
-    padding-bottom: 162px;
+    
+    @include xl-min {
+      padding-top: 165px;
+      padding-bottom: 162px;
+
+    }
+
+    @include  xl {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
   }
 
   &__title {
-    width: 718px;
 
     text-align: center;
-
-    font-size: $font-size-65;
     font-weight: $font-weight-600;
-    line-height: 75px;
+
+    
+    @include  xl-min {
+      font-size: $font-size-65;
+      line-height: 75px;
+    max-width: 730px;
+
+
+    }
+
+    @include  xl-lg {
+      font-size: $font-size-50;
+      line-height: 55px;
+    }
+
+    @include  lg {
+      font-size: $font-size-40;
+      line-height: 40px;
+    }
+
+    @include  sm {
+      line-height: 40px;
+      font-size: 30px;
+    }
   }
 
   &__desription {
-    width: 540px;
+    max-width: 540px;
     margin-bottom: 25px;
 
     text-align: center;
@@ -30,7 +61,15 @@
     line-height: 30px;
   }
 
-  &__foto {
+  &__img {
     margin-bottom: 32px;
+
+    @include  xl-sm {
+      width: 90%;
+    }
+
+    @include sm {
+      width: 100%;
+    }
   }
 }
