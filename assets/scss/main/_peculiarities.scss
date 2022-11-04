@@ -1,12 +1,22 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .peculiarities {
-  padding-top: 120px;
-  padding-bottom: 160px;
 
   text-align: center;
 
   background-color: $color-orange-lg;
+
+  @include xl-min {
+    padding-top: 120px;
+  padding-bottom: 160px;
+
+  }
+
+  @include  xl {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
   &__container {
     max-width: 784px;
@@ -14,10 +24,27 @@
 
   &__title {
     margin-bottom: 29px;
-
-    font-size: $font-size-65;
     font-weight: $font-weight-600;
-    line-height: 75px;
+
+    @include  xl-min {
+      font-size: $font-size-65;
+      line-height: 75px;
+    }
+
+    @include  xl-lg {
+      font-size: $font-size-50;
+      line-height: 55px;
+    }
+
+    @include  lg {
+      font-size: $font-size-40;
+      line-height: 40px;
+    }
+
+    @include  sm {
+      line-height: 40px;
+      font-size: 30px;
+    }
   }
 
   &__description {
