@@ -29,8 +29,6 @@
   &__menu-box {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-
     @include  xl-min {
       gap: 40px;
     }
@@ -109,7 +107,6 @@
     line-height: 30px;
   }
 }
-
 
 .footer-menu {
   @include  md-min {
