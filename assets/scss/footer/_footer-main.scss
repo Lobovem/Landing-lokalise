@@ -29,6 +29,7 @@
   &__menu-box {
     display: flex;
     flex-wrap: wrap;
+
     @include  xl-min {
       gap: 40px;
     }
