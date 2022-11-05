@@ -29,13 +29,16 @@
   &__menu-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     @include  xl-min {
-      gap: 65px;
+      gap: 40px;
     }
     @include  xl {
       gap: $gap-xl;
+    }
+    @include  md {
+      justify-content: space-evenly;
     }
   }
 }
@@ -92,13 +95,15 @@
   }
 
   &__desription {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     font-size: $font-size-20;
     line-height: 30px;
   }
 
   &__link {
+    padding: 10px 10px 10px 0;
+
     font-size: $font-size-20;
     font-weight: $font-weight-600;
     line-height: 30px;
@@ -107,8 +112,9 @@
 
 
 .footer-menu {
-  flex: 1;
-
+  @include  md-min {
+    width: 180px;
+  }
   @include md-sm {
     flex-basis: 220px;
   }
@@ -130,6 +136,8 @@
   }
 
   &__link {
+    padding: 10px 10px 10px 0;
+
     font-size: $font-size-15;
     line-height: 15px;
   }

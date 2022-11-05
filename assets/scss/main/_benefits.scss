@@ -2,9 +2,6 @@
 @use "../mixins" as *;
 
 .benefits {
-  @include  md {
-  }
-
   &__container-left {
     display: flex;
     align-items: center;
@@ -63,12 +60,16 @@
     font-weight: $font-weight-600;
     line-height: 60px;
 
-    @include  xl {
+    @include xl-xs {
+      margin-bottom: 10px;
+
       font-size: $font-size-40;
-      line-height: 40px;
+      line-height: 50px;
     }
     @include  xs {
-      font-size: $font-size-35;
+      margin-bottom: 10px;
+
+      font-size: $font-size-30;
       line-height: 40px;
     }
   }

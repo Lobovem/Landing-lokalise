@@ -17,25 +17,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
-.footer-logo {
-  display: flex;
 
-  gap: 15px;
-  @include  md {
-    align-items: center;
-    flex-direction: column;
+  &__logo {
+    display: flex;
 
-    text-align: center;
+    gap: 15px;
+    @include  md {
+      align-items: center;
+      flex-direction: column;
+
+      text-align: center;
+    }
   }
 
-  &__img {
+  &__logo-img {
     max-width: 100px;
   }
 
 
 
-  &__text {
+  &__logo-text {
     font-size: $font-size-12;
     line-height: 15px;
 
@@ -43,17 +44,16 @@
       max-width: 301px;
     }
   }
-}
 
-.footer-copyright {
-  @include  md-min {
-    margin-right: 76px;
+  &__copyright {
+    @include  md-min {
+      margin-right: 76px;
+    }
+    @include  md {
+      text-align: center;
+    }
   }
-  @include  md {
-    text-align: center;
-  }
-
-  &__text {
+  &__copyright-text {
     font-size: $font-size-12;
     line-height: 15px;
   }

@@ -21,13 +21,13 @@
     font-weight: $font-weight-600;
     line-height: 60px;
 
-    @include  xl {
+    @include xl-xs {
       margin-bottom: 50px;
 
       font-size: $font-size-40;
       line-height: 50px;
     }
-    @include sm {
+    @include  xs {
       font-size: $font-size-30;
       line-height: 40px;
     }

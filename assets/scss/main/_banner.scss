@@ -15,16 +15,16 @@
       grid-template-columns: 1fr 1fr;
     }
     @include xl {
-      padding-top: 75px;
-      padding-bottom: 75px;
+      padding-top: 50px;
+      padding-bottom: 50px;
 
       text-align: center;
 
       grid-template-areas: "tl" "ds" "im" "ac" "ft";
     }
     @include sm {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 
@@ -37,16 +37,15 @@
     line-height: 70px;
 
     grid-area: tl;
-    @include xl {
-      font-size: $font-size-50;
-      line-height: 50px;
-    }
-    @include sm {
-      margin-bottom: 20px;
+    @include xl-xs {
+      margin-bottom: 10px;
 
       font-size: $font-size-40;
+      line-height: 50px;
     }
-    @include xx {
+    @include  xs {
+      margin-bottom: 10px;
+
       font-size: $font-size-30;
       line-height: 40px;
     }
