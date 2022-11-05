@@ -1,25 +1,67 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .footer {
   background-color: $color-grey;
 }
 
 .footer-main {
-  display: flex;
-
-  padding-top: 95px;
-  padding-bottom: 95px;
-
   border-bottom: 1px solid $color-black;
+  
+  
+    @include  xl {
+      gap: 70px;
+  
+    }
+  
+  @include  lg-min {
+    display: flex;
+    gap: 140px;
+    padding-bottom: 95px;
+  padding-top: 95px;
 
-  gap: 62px;
 }
+
+@include  lg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+
+}
+
+  &__menu-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include  xl-min {
+      gap: 65px;
+    }
+
+    @include  xl {
+    gap: $gap-xl;
+
+    }
+
+  }
+}
+
 .studies {
   display: flex;
   flex-direction: column;
+  @include lg-min {
+    max-width: 300px;
 
-  max-width: 300px;
-  margin-right: 78px;
+  }
+
+  @include  lg {
+    margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 450px;
+
+  }
 
   &__title {
     margin-bottom: 28px;
@@ -27,12 +69,31 @@
     font-size: $font-size-40;
     font-weight: $font-weight-600;
     line-height: 50px;
+
+    @include  xl-sm {
+      font-size: $font-size-35;
+      line-height: 40px;
+    }
+
+    @include sm {
+      line-height: 30px;
+      font-size: $font-size-30;
+
+    }
   }
 
   &__foto {
-    max-width: 300px;
-    max-height: 300px;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
+    
+    @include  lg-min {
+      max-width: 300px;
+      max-height: 300px;
+
+    }
+
+    @include  lg {
+      max-width: 100%;
+    }
   }
 
   &__logo {
@@ -55,17 +116,31 @@
   }
 }
 
+
 .footer-menu {
+
+  flex: 1;
+
+  @include md-sm {
+    flex-basis: 220px;
+
+  }
+
+  @include sm {
+    flex-basis: 100%;
+    text-align: center;
+  }
   &__title {
     margin-bottom: 21px;
   }
 
   &__list {
-    list-style: none;
+    @include unlist
+    
   }
 
   &__item {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   &__link {
