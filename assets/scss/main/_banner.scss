@@ -89,17 +89,13 @@
 
   &__picture {
     grid-area: im;
-
   }
 
   &__img {
-
     @include  xl-min {
       width: 115%;
       margin-left: -90px;
-
     }
-
     @include xl {
       width: 100%;
       margin-bottom: 30px;

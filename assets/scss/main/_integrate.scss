@@ -2,50 +2,43 @@
 @use "../mixins" as *;
 
 .integrate {
-
   &__container {
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    
     @include xl-min {
       padding-top: 165px;
       padding-bottom: 162px;
-
     }
-
     @include  xl {
       padding-top: 50px;
       padding-bottom: 50px;
-  }
+    }
   }
 
   &__title {
-
     text-align: center;
+
     font-weight: $font-weight-600;
 
-    
     @include  xl-min {
+      max-width: 730px;
+
       font-size: $font-size-65;
       line-height: 75px;
-    max-width: 730px;
     }
-
     @include  xl-lg {
       font-size: $font-size-50;
       line-height: 55px;
     }
-
     @include  lg {
       font-size: $font-size-40;
       line-height: 40px;
     }
-
     @include  sm {
-      line-height: 40px;
       font-size: 30px;
+      line-height: 40px;
     }
   }
 
@@ -65,7 +58,6 @@
     @include  xl-sm {
       width: 90%;
     }
-
     @include sm {
       width: 100%;
     }

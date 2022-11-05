@@ -6,47 +6,42 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
+
     padding-top: 53px;
     padding-bottom: 104px;
-justify-content: space-between;
 
-@include  xl-min {
+    @include  xl-min {
       gap: $gap 96px;
     }
-
     @include  xl {
       gap: $gap $gap;
     }
-
     @include  sm {
       flex-wrap: wrap;
       justify-content: center;
-    padding-bottom: 50px;
 
+      padding-bottom: 50px;
     }
-
   }
 
   &__text-wrap {
     @include sm {
       text-align: center;
     }
-
   }
 
 
   &__text {
-    margin-bottom: 30px;
     margin-top: 10px;
+    margin-bottom: 30px;
 
     font-size: $font-size-30;
     line-height: 40px;
 
     @include  md {
-    font-size: $font-size-25;
-    line-height: 30px;
-
-
+      font-size: $font-size-25;
+      line-height: 30px;
     }
   }
 
@@ -56,28 +51,23 @@ justify-content: space-between;
 
 
 
-  
+
   &__picture {
     @include  sm {
-order: -1;
+      order: -1;
     }
   }
 
   &__foto {
-    
     @include  md-min {
       max-width: 310px;
-
     }
-
     @include  md {
       max-width: 250px;
     }
-
     @include  sm {
       max-width: 100%;
     }
   }
-
 }
 
