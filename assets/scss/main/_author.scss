@@ -11,13 +11,13 @@
     padding-top: 53px;
     padding-bottom: 104px;
 
-    @include  xl-min {
+    @include xl-min {
       gap: $gap 96px;
     }
-    @include  xl {
+    @include xl {
       gap: $gap $gap;
     }
-    @include  sm {
+    @include sm {
       flex-wrap: wrap;
       justify-content: center;
 
@@ -38,7 +38,7 @@
     font-size: $font-size-30;
     line-height: 40px;
 
-    @include  md {
+    @include md {
       font-size: $font-size-25;
       line-height: 30px;
     }
@@ -49,21 +49,20 @@
   }
 
   &__picture {
-    @include  sm {
+    @include sm {
       order: -1;
     }
   }
 
   &__foto {
-    @include  md-min {
+    @include md-min {
       max-width: 310px;
     }
-    @include  md {
+    @include md {
       max-width: 250px;
     }
-    @include  sm {
+    @include sm {
       max-width: 100%;
     }
   }
 }
-

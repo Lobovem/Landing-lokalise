@@ -321,8 +321,7 @@ a {
   font-size: 15px;
   line-height: 20px;
 }
-
-.header-navbar__btn {
+.navbar__burger-menu {
   position: relative;
 
   width: 40px;
@@ -330,7 +329,7 @@ a {
 
   cursor: pointer;
 }
-.header-navbar__btn span {
+.navbar__burger-menu span {
   position: absolute;
   left: 0;
 
@@ -350,28 +349,28 @@ a {
   border-radius: 5px;
   background-color: #ff6336;
 }
-.header-navbar__btn span:nth-of-type(1) {
+.navbar__burger-menu span:nth-of-type(1) {
   top: 0;
 }
-.header-navbar__btn span:nth-of-type(2) {
+.navbar__burger-menu span:nth-of-type(2) {
   top: 12px;
 }
-.header-navbar__btn span:nth-of-type(3) {
+.navbar__burger-menu span:nth-of-type(3) {
   top: 24px;
 }
-.header-navbar__btn.active span:nth-of-type(1) {
+.navbar__burger-menu.active span:nth-of-type(1) {
   top: 12px;
 
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.header-navbar__btn.active span:nth-of-type(2) {
+.navbar__burger-menu.active span:nth-of-type(2) {
   left: -40px;
 
   opacity: 0;
 }
-.header-navbar__btn.active span:nth-of-type(3) {
+.navbar__burger-menu.active span:nth-of-type(3) {
   top: 12px;
 
   -webkit-transform: rotate(-135deg);
@@ -851,7 +850,7 @@ a {
   }
 }
 @media (min-width: 992px) {
-  .header-navbar__btn {
+  .navbar__burger-menu {
     display: none;
   }
   .use-lokalise__box {
