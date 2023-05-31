@@ -38,10 +38,17 @@
   border-style: solid;
 
   font-weight: $font-weight-600;
+  transition: 0.4s;
 
   &--accent {
     border-color: $color-orange;
     background-color: $color-orange;
+
+    &:hover {
+      color: $color-orange;
+      background-color: #e2e2e27b;
+    }
+
   }
 
   &--primary {
@@ -51,6 +58,11 @@
     color: $color-black;
     border: 1px solid $color-grey-sm;
     background-color: $color-white;
+
+    &:hover {
+      color: $color-orange;
+      background-color: #e2e2e27b;
+    }
   }
 
   &--sm {
@@ -58,6 +70,7 @@
       width: 120px;
       min-height: 45px;
     }
+
     @include md {
       width: 100px;
       min-height: 35px;
@@ -72,9 +85,15 @@
       width: 140px;
       min-height: 50px;
     }
+
     @include sm {
       width: 130px;
       min-height: 40px;
+    }
+
+    &:hover {
+      color: $color-orange;
+      background-color: $color-white;
     }
   }
 
@@ -86,6 +105,7 @@
       width: 160px;
       min-height: 50px;
     }
+
     @include sm {
       width: 140px;
       min-height: 50px;

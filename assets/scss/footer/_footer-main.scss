@@ -8,10 +8,11 @@
 .footer-main {
   border-bottom: 1px solid $color-black;
 
-  @include  xl {
+  @include xl {
     gap: 70px;
   }
-  @include  lg-min {
+
+  @include lg-min {
     display: flex;
 
     padding-top: 95px;
@@ -19,7 +20,8 @@
 
     gap: 140px;
   }
-  @include  lg {
+
+  @include lg {
     flex-wrap: wrap;
 
     padding-top: 50px;
@@ -30,13 +32,15 @@
     display: flex;
     flex-wrap: wrap;
 
-    @include  xl-min {
+    @include xl-min {
       gap: 40px;
     }
-    @include  xl {
+
+    @include xl {
       gap: $gap-xl;
     }
-    @include  md {
+
+    @include md {
       justify-content: space-evenly;
     }
   }
@@ -49,7 +53,8 @@
   @include lg-min {
     max-width: 300px;
   }
-  @include  lg {
+
+  @include lg {
     max-width: 450px;
     margin-right: auto;
     margin-bottom: 50px;
@@ -65,10 +70,11 @@
     font-weight: $font-weight-600;
     line-height: 50px;
 
-    @include  xl-sm {
+    @include xl-sm {
       font-size: $font-size-35;
       line-height: 40px;
     }
+
     @include sm {
       font-size: $font-size-30;
       line-height: 30px;
@@ -78,11 +84,12 @@
   &__foto {
     margin-bottom: 28px;
 
-    @include  lg-min {
+    @include lg-min {
       max-width: 300px;
       max-height: 300px;
     }
-    @include  lg {
+
+    @include lg {
       max-width: 100%;
     }
   }
@@ -110,17 +117,20 @@
 }
 
 .footer-menu {
-  @include  md-min {
+  @include md-min {
     width: 180px;
   }
+
   @include md-sm {
     flex-basis: 220px;
   }
+
   @include sm {
     flex-basis: 100%;
 
     text-align: center;
   }
+
   &__title {
     margin-bottom: 21px;
   }
@@ -138,5 +148,10 @@
 
     font-size: $font-size-15;
     line-height: 15px;
+    transition: 0.4s;
+
+    &:hover {
+      color: $color-orange;
+    }
   }
 }

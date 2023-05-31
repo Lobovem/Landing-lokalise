@@ -6,21 +6,46 @@
     order: 1;
   }
 
+
   &__list {
     display: flex;
+    gap: 20px;
 
-    @include unlist;
     @include xl-min {
       gap: 30px;
     }
+
     @include xl {
       gap: 20px;
     }
+
     @include lg {
-      display: none;
-    }
-    @include xs {
+      position: fixed;
+      top: -100%;
+      left: 0;
+
+      overflow: auto;
+
+      width: 100%;
+      height: 100%;
+
+      transition: top 0.3s ease 0s;
+
+      background-color: $color-white;
+      display: flex;
+      align-items: center;
       flex-direction: column;
+
+      padding: 60px 20px 40px 20px;
+    }
+
+    @include unlist;
+
+
+    &.active {
+      @include lg {
+        top: 0;
+      }
     }
   }
 
@@ -31,7 +56,18 @@
 
     font-size: $font-size-15;
     line-height: 20px;
+    transition: 0.4s;
+
+    @include lg {
+      font-size: $font-size-30;
+    }
+
+    &:hover {
+      color: $color-orange;
+    }
   }
+
+
 
   &__burger-menu {
     position: relative;
@@ -72,6 +108,13 @@
       &:nth-of-type(3) {
         top: 24px;
       }
+    }
+
+    &.active {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 10;
     }
 
     &.active span {
