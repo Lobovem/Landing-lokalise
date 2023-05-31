@@ -11,7 +11,6 @@
   @include xl {
     gap: 70px;
   }
-
   @include lg-min {
     display: flex;
 
@@ -20,7 +19,6 @@
 
     gap: 140px;
   }
-
   @include lg {
     flex-wrap: wrap;
 
@@ -35,11 +33,9 @@
     @include xl-min {
       gap: 40px;
     }
-
     @include xl {
       gap: $gap-xl;
     }
-
     @include md {
       justify-content: space-evenly;
     }
@@ -53,7 +49,6 @@
   @include lg-min {
     max-width: 300px;
   }
-
   @include lg {
     max-width: 450px;
     margin-right: auto;
@@ -74,7 +69,6 @@
       font-size: $font-size-35;
       line-height: 40px;
     }
-
     @include sm {
       font-size: $font-size-30;
       line-height: 30px;
@@ -88,7 +82,6 @@
       max-width: 300px;
       max-height: 300px;
     }
-
     @include lg {
       max-width: 100%;
     }
@@ -120,11 +113,9 @@
   @include md-min {
     width: 180px;
   }
-
   @include md-sm {
     flex-basis: 220px;
   }
-
   @include sm {
     flex-basis: 100%;
 
@@ -146,9 +137,10 @@
   &__link {
     padding: 10px 10px 10px 0;
 
+    transition: 0.4s;
+
     font-size: $font-size-15;
     line-height: 15px;
-    transition: 0.4s;
 
     &:hover {
       color: $color-orange;
