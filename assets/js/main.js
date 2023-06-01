@@ -71,7 +71,6 @@ if (menuLinks.length > 0) {
       //  Если нужно вычесть высоту блока, например position:fixed
       // + pageXOffset -
       // document.querySelector('.test').offsetHeight;
-
       window.scrollTo({
         top: gotoBlockValue,
         behavior: 'smooth',
