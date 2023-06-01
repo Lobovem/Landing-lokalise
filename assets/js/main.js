@@ -54,3 +54,29 @@ if (burgerMenu) {
     });
   });
 }
+
+//Прокрутка при клике
+
+const menuLinks = document.querySelectorAll('.navbar__link[data-goto]');
+if (menuLinks.length > 0) {
+  menuLinks.forEach((menuLinks) => {
+    menuLinks.addEventListener('click', onMenuLinkClick);
+  });
+
+  function onMenuLinkClick(e) {
+    const menuLink = e.target;
+    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top;
+      //  Если нужно вычесть высоту блока, например position:fixed
+      // + pageXOffset -
+      // document.querySelector('.test').offsetHeight;
+
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: 'smooth',
+      });
+      e.preventDefault();
+    }
+  }
+}
